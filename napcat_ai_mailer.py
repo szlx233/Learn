@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-napcat_ai_mailer_v3_final.py
+napcat_ai_mailer.py
 功能：
  1. AI 返回结构化 JSON，后端解析成邮件 HTML
  2. 邮件支持分块折叠
@@ -1792,3 +1792,4 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
 
         graceful_shutdown()
+
