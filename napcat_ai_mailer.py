@@ -1781,15 +1781,7 @@ def api_clear_all_messages():
 
 if __name__ == "__main__":
     print("="*60)
-    print("启动 NapCat AI 邮件助手 v3 最终版")
-    print("="*60)
-    print("✓ AI 返回结构化 JSON，后端生成邮件 HTML")
-    print("✓ 邮件支持分块折叠功能")
-    print("✓ 数据库支持批量删除/标记")
-    print("✓ 配置永久保存 + 实时生效")
-    print("✓ 所有操作有浮动通知反馈")
-    print("✓ 系统状态实时监控")
-    print("✓ CQ码自动解析")
+    print("启动 NapCat AI 邮件助手")
     print("="*60)
     start_flask_thread()
     schedule_jobs()
@@ -1798,4 +1790,5 @@ if __name__ == "__main__":
         while not stop_event.is_set():
             time.sleep(0.5)
     except KeyboardInterrupt:
+
         graceful_shutdown()
